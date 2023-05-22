@@ -2,8 +2,6 @@ package umbjm.ft.inf.umbjm
 
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
@@ -25,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         toogle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        replaceFragment(BerandaFragment(), "Beranda")
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
