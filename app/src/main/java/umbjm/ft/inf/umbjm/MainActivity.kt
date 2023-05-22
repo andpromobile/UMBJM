@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(toogle)
         toogle.syncState()
 
-        supportActionBar?.show()
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         replaceFragment(BerandaFragment(), "Beranda")
 
