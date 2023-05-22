@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        supportActionBar?.title ="Universitas Muhammadiyah Banjarmasin"
+
         replaceFragment(BerandaFragment(), "Beranda")
 
         navView.setNavigationItemSelectedListener {
